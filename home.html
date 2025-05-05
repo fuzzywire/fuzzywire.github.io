@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Wire Bouquet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Navbar styles */
+        body {
+            background: url('background2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #f9a826;
+        }
+
+        /* Home page styles */
+        #home {
+            padding: 120px 20px 50px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+            color: #fff;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .intro-section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+
+        .intro-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+
+        .feature {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .feature h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer .social-links a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-links a:hover {
+            color: #f9a826;
+        }
+    </style>
+</head>
+<script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+      
+</script>
+
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="c:\Users\marka\Downloads\475756057_599856606189600_2338402452816270181_n.jpg" alt="flower logo" class="logo-img">
+            <a href="home.html">Fuzzy Wire Bouquet</a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="howitworks.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="support.html">Customer Support</a></li>
+            <li><a href="resources.html">Downloads/Resources</a></li>
+            <li><a href="newsletter.html">News Letter</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+
+        </ul>
+    </nav>
+
+    <script>
+        function logout() {
+            localStorage.removeItem("loggedIn");
+            window.location.href = "login.html";
+        }
+    </script>
+    
+    
+    <!-- Home Page Content -->
+    <section id="home">
+        <!-- Introduction Section -->
+        <div class="intro-section">
+            <h2>Welcome to Fuzzy Wire Bouquet</h2>
+            <p>At Fuzzy Wire Bouquet, we specialize in crafting unique, beautiful wire bouquets that combine nature's beauty with artistic creativity. Perfect for gifts, home decor, or special occasions, our wire bouquets add a modern twist to traditional floral arrangements.</p>
+            <p>Explore our collection of hand-crafted bouquets and find the perfect one to brighten up your space or gift to someone special.</p>
+        </div>
+
+        <!-- Key Features Section -->
+        <div class="feature-container">
+            <div class="feature">
+                <h3>Handcrafted Designs</h3>
+                <p>Each bouquet is carefully handcrafted to ensure the highest quality and unique design, bringing elegance and charm to any setting.</p>
+            </div>
+            <div class="feature">
+                <h3>Durable & Long-Lasting</h3>
+                <p>Made from high-quality wire and materials, our bouquets are designed to last and stay beautiful for years to come.</p>
+            </div>
+            <div class="feature">
+                <h3>Perfect for Any Occasion</h3>
+                <p>From weddings to home decor, our bouquets are perfect for any occasion, adding a touch of timeless beauty to your special moments.</p>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="cta-section">
+            <h2>Ready to Find Your Perfect Bouquet?</h2>
+            <p>Browse our full collection of wire bouquets and discover the perfect piece for you or a loved one.</p>
+            <a href="product.html" style="text-decoration: none; color: #fff; background-color: #f9a826; padding: 15px 30px; font-size: 1.2rem; border-radius: 5px;">Browse Products</a>
+        </div>
+    </section>
+
+    <script>
+        function logout() {
+            localStorage.removeItem("loggedIn");
+            window.location.href = "login.html";
+        }
+    </script>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fuzzy Wire Bouquet | All Rights Reserved</p>
+        <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="social-links">
+                <a href="https://web.facebook.com/profile.php?id=61573905306813"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/68184e82685043190cc6fe59/1iqfg5lav';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+</body>
+
+
+
+</html>
