@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog/News - Fuzzy Wire Bouquet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('background2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .logo a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    ul li {
+      margin-right: 20px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+      color: #f9a826;
+    }
+
+    #blog-section {
+      padding: 120px 20px 60px 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    #blog-section h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .blog-item {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .blog-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .blog-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .blog-item h3 {
+      font-size: 1.5rem;
+      color: #f9a826;
+      margin: 20px 0 10px;
+    }
+
+    .blog-item p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .blog-item a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .blog-item a:hover {
+      color: #f9a826;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .blog-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .blog-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="c:\Users\marka\Downloads\475756057_599856606189600_2338402452816270181_n.jpg" alt="flower logo" class="logo-img">
+      <a href="index.html">Fuzzy Wire Bouquet</a>
+  </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="howitworks.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="support.html">Customer Support</a></li>
+            <li><a href="resources.html">Downloads/Resources</a></li>
+            <li><a href="newsletter.html">News Letter</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Blog Section -->
+  <section id="blog-section">
+    <h1>Latest Blog/News</h1>
+
+    <div class="blog-container">
+      <div class="blog-item">
+        <img src="images/image1.jpg" alt="Blog Post 1">
+        <h3>Know More About Us</h3>
+        <p>Our Background History</p>
+        <a href="https://www.blogger.com/blog/post/edit/preview/2183507629146579625/6349366449491194198">Read More</a>
+      </div>
+
+      <div class="blog-item">
+        <img src="images/image2.jpg" alt="Blog Post 2">
+        <h3>Why Wire Bouquets are the Perfect Gift</h3>
+        <p>Wire bouquets are unique gifts that last forever. Here's why they're perfect for any occasion.</p>
+        <a href="post2.html">Read More</a>
+      </div>
+
+      <div class="blog-item">
+        <img src="images/image3.jpg" alt="Blog Post 3">
+        <h3>Our Sustainable Approach</h3>
+        <p>At Fuzzy Wire Bouquet, sustainability matters. Here's how we're making eco-friendly flowers.</p>
+        <a href="post3.html">Read More</a>
+      </div>
+
+      <div class="blog-item">
+        <img src="images/image4.jpg" alt="Blog Post 4">
+        <h3>Holiday Wire Arrangement Ideas</h3>
+        <p>Get festive with our top bouquet ideas for the holidays! Sparkle, charm, and creativity await.</p>
+        <a href="post4.html">Read More</a>
+      </div>
+
+      <div class="blog-item">
+        <img src="images/image5.jpg" alt="Blog Post 5">
+        <h3>Behind the Scenes</h3>
+        <p>A peek into the artistry and love poured into every Fuzzy Wire Bouquet creation.</p>
+        <a href="post5.html">Read More</a>
+      </div>
+
+      <div class="blog-item">
+        <img src="images/image6.jpg" alt="Blog Post 6">
+        <h3>Seasonal Trends in Wire Bouquets</h3>
+        <p>Check out this year’s freshest seasonal bouquet trends that’ll wow your senses.</p>
+        <a href="post6.html">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fuzzy Wire Bouquet | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

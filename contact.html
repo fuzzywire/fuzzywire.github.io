@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fuzzy Wire Bouquet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url('background2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+       
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+         /* Navbar styling */
+         nav {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #f9a826;
+        }
+
+        /* Contact Form Section */
+        #contact-section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact-section h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #f9a826;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #f9a826;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #contact-section {
+                padding: 20px;
+            }
+
+            .contact-form button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="c:\Users\marka\Downloads\475756057_599856606189600_2338402452816270181_n.jpg" alt="flower logo" class="logo-img">
+            <a href="index.html">Fuzzy Wire Bouquet</a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="howitworks.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="support.html">Customer Support</a></li>
+            <li><a href="resources.html">Downloads/Resources</a></li>
+            <li><a href="newsletter.html">News Letter</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section id="contact-section">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <!-- First Name Field -->
+            <input type="text" name="name" placeholder="Your First Name" required>
+
+            <!-- Last Name Field -->
+            <input type="text" name="name" placeholder="Your Last Name" required>
+
+            <!-- Email Field -->
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <!-- Phone Field -->
+            <input type="text" name="Phone" placeholder="Phone" required>
+
+             <!-- Address Field -->
+             <input type="text" name="Address" placeholder="Address" required>
+
+            <!-- Message Field -->
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fuzzy Wire Bouquet | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

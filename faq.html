@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Fuzzy Wire Bouquet</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #f9a826;
+        }
+
+
+        /* FAQ Question and Answer Styling */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .faq-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            border-radius: 8px;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .faq-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .faq-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 0;
+        }
+
+        .faq-item p {
+            display: none;
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+           <img src="c:\Users\marka\Downloads\475756057_599856606189600_2338402452816270181_n.jpg" alt="flower logo" class="logo-img">
+           <a href="index.html">Fuzzy Wire Bouquet</a>
+       </div>
+       <ul>
+        <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="howitworks.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="support.html">Customer Support</a></li>
+            <li><a href="resources.html">Downloads/Resources</a></li>
+            <li><a href="newsletter.html">News Letter</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+   </ul>
+</nav>
+
+    <!-- FAQ Section -->
+    <section id="faq-section">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <h3>What is a wire bouquet?</h3>
+                <p>A wire bouquet is a handcrafted flower arrangement made from wire and other materials, designed to last forever. Unlike fresh flowers, our bouquets won't wilt or die, making them a timeless gift or decoration.</p>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <h3>Can I customize my bouquet?</h3>
+                <p>Yes! We offer customization options where you can choose the colors, flowers, and even add personal messages or special touches to make your bouquet unique to you.</p>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <h3>How long will it take to receive my order?</h3>
+                <p>Our typical processing time is 3-5 business days for crafting and packaging. Shipping times depend on your location but generally take 5-7 business days after your bouquet is shipped.</p>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <h3>Can I order in bulk for events?</h3>
+                <p>Yes! We offer bulk orders for events like weddings, corporate gifts, and special occasions. Please contact us for more details on pricing and availability.</p>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <h3>Are the bouquets suitable for all occasions?</h3>
+                <p>Absolutely! Our wire bouquets are perfect for any occasion, whether it's a birthday, anniversary, wedding, or just because. Their lasting beauty makes them a memorable gift for any moment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fuzzy Wire Bouquet | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Add toggle functionality to show/hide FAQ answers
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('p');
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

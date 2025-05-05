@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Fuzzy Wire Bouquet</title>
+    <style>
+        /* Page background and base styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        /* Fixed navbar styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #f9a826;
+        }
+
+        /* Add space at the top to prevent nav overlapping content */
+        #how-it-works {
+            padding-top: 120px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #how-it-works h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .step {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            color: #333;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+        }
+
+        .step h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            font-size: 16px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="c:\Users\marka\Downloads\475756057_599856606189600_2338402452816270181_n.jpg" alt="flower logo" class="logo-img">
+            <a href="index.html">Fuzzy Wire Bouquet</a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="howitworks.html">How It Works</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="support.html">Customer Support</a></li>
+            <li><a href="resources.html">Downloads/Resources</a></li>
+            <li><a href="newsletter.html">News Letter</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h1>How It Works</h1>
+
+        <div class="steps-container">
+            <div class="step">
+                <h3>Step 1: Choose Your Bouquet</h3>
+                <p>Browse our selection of handcrafted wire bouquets, each designed to last forever. Select the one that speaks to you or fits your occasion.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 2: Customize Your Design</h3>
+                <p>Personalize your bouquet by selecting colors, adding special touches, or choosing specific flowers. We're here to create something unique just for you.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 3: Place Your Order</h3>
+                <p>Once you're happy with your bouquet, simply place your order. We accept various payment methods for your convenience and security.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 4: Handcrafted & Shipped</h3>
+                <p>After your order is confirmed, our talented team will begin crafting your bouquet with care. It will be carefully packaged and shipped directly to your address.</p>
+            </div>
+
+            <div class="step">
+                <h3>Step 5: Enjoy Your Bouquet</h3>
+                <p>Once your bouquet arrives, enjoy the beauty and elegance it brings to your home, office, or as a thoughtful gift to a loved one.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fuzzy Wire Bouquet | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Fuzzy Wire Bouquet</title>
+    <style>
+        body {
+            background: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: #333;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #f9a826;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+        <input type="text" id="reg-username" placeholder="Username" required>
+        <input type="password" id="reg-password" placeholder="Password" required>
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="login.html" style="color:#f9a826;">Login here</a></p>
+    </div>
+
+    <script>
+        function register() {
+            const username = document.getElementById("reg-username").value;
+            const password = document.getElementById("reg-password").value;
+
+            if (username && password) {
+                localStorage.setItem("user", JSON.stringify({ username, password }));
+                alert("Registration successful! You can now log in.");
+                window.location.href = "login.html";
+            } else {
+                alert("Please fill in both fields.");
+            }
+        }
+    </script>
+</body>
+</html>
